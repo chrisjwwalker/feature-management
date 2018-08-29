@@ -1,0 +1,25 @@
+@(contactDetails: Boolean, login: Boolean)
+
+<html>
+    <body>
+        @if(contactDetails) {
+            <div>
+                <p>Contact us</p>
+                <ul>
+                    <li>Tel: 1234</li>
+                    <li>email: example@@example.com</li>
+                </ul>
+            </div>
+        }
+
+        @if(login) {
+            <div>
+                <p>Login</p>
+                <ul>
+                    <li>Register here</li>
+                    <li>Login here</li>
+                </ul>
+            </div>
+        }
+    </body>
+</html>
