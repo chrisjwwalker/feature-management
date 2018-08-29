@@ -26,7 +26,7 @@ trait AppFilter extends Filter {
       f(rh)
     } else {
       Logger.info("App is disabled; blocking")
-      Future(ServiceUnavailable)
+      Future(ServiceUnavailable("This service is down for maintenace, try again later"))
     }
   }
 }
